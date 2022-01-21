@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .nav-main-btn{
+        @apply inline-block text-center text-2xl text-white font-light rounded-2xl mx-[1.5rem] bg-gradient-to-br from-[#FF7800] to-[#FEB400] px-10 py-6;
+    }
+
+    .nav-sub-btn{
+        @apply inline-block text-center text-2xl text-white font-light rounded-2xl mx-[1.5rem] bg-zinc-800 px-10 py-6;
+    }
+}

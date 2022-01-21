@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>  
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/output.css">
+        <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/merom-sans" type="text/css"/>
+        <title>Flanba</title>
+    </head>
+    <body class="font-[MeromSansRegular] bg-[#202027]">
+        <div class="bg-[#1b1b21] pb-20">
+            <div class="text-center py-[0.5rem]">
+                <img src="assets/images/logo.png" id="logo" class="titleAnimation inline-block w-[50rem] drop-shadow-xl hover:translate-y-[-0.5rem] duration-300 cursor-pointer">
+            </div>
+            <div class="text-center titleAnimation">
+                <a class="nav-sub-btn hover:translate-y-[-0.25rem] duration-300 drop-shadow-xl cursor-pointer">HOME</a>
+                <a class="nav-main-btn hover:translate-y-[-0.25rem] duration-300 drop-shadow-xl cursor-pointer">STORE</a>
+                <a class="nav-sub-btn hover:translate-y-[-0.25rem] duration-300 drop-shadow-xl cursor-pointer">RULES</a>
+            </div>
+        </div>
+        <script>
+            document.addEventListener("click", logoClick);
+            
+            function logoClick(){
+                window.location.href = "index.html";
+            }
+        </script>
+        <style>
+        .titleAnimation{
+          animation: title 1.5s;
+        }
+
+        @keyframes title{
+            from{
+            opacity: 0;
+            transform: translateX(-20px);
+        }
+
+            to{
+            opacity: 1;
+            transform: translateX(0);
+        }
+      }
+        </style>
+    </body>
+</html>
