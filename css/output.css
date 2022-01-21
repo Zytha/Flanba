@@ -508,8 +508,36 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.mx-\[1\.5rem\] {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.mx-\[10rem\] {
+  margin-left: 10rem;
+  margin-right: 10rem;
+}
+
+.mx-\[12rem\] {
+  margin-left: 12rem;
+  margin-right: 12rem;
+}
+
+.mx-\[24rem\] {
+  margin-left: 24rem;
+  margin-right: 24rem;
+}
+
+.mt-\[10rem\] {
+  margin-top: 10rem;
+}
+
 .inline-block {
   display: inline-block;
+}
+
+.grid {
+  display: grid;
 }
 
 .w-\[50rem\] {
@@ -522,6 +550,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .cursor-pointer {
   cursor: pointer;
+}
+
+.rounded-2xl {
+  border-radius: 1rem;
 }
 
 .bg-slate-800 {
@@ -579,6 +611,21 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 2.5rem;
 }
 
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.px-\[10rem\] {
+  padding-left: 10rem;
+  padding-right: 10rem;
+}
+
 .pb-10 {
   padding-bottom: 2.5rem;
 }
@@ -593,6 +640,25 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .font-\[MeromSansRegular\] {
   font-family: MeromSansRegular;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
+}
+
+.font-light {
+  font-weight: 300;
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .drop-shadow-xl {
