@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<html lang="en">
     <head>  
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,39 +7,24 @@
         <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/merom-sans" type="text/css"/>
         <title>Flanba</title>
     </head>
-    <body class="font-[MeromSansRegular] bg-[#202027]">
-        <div class="bg-[#1b1b21] pb-20">
-            <div class="text-center py-[0.5rem]">
-                <img src="assets/images/logo.png" id="logo" class="titleAnimation inline-block w-[50rem] drop-shadow-xl hover:translate-y-[-0.5rem] duration-300 cursor-pointer">
+    <body class="font-[MeromSansRegular] bg-[#2C2F33]">
+        <div>
+            <div class="bg-[url('../assets/images/wallpaper.png')] bg-no-repeat bg-cover bg-scroll bg-top text-center py-[5rem]">
+                <img src="assets/images/logo.png" id="logo" class="inline-block h-[12.5rem] drop-shadow-xl cursor-pointer">
             </div>
-            <div class="text-center titleAnimation">
-                <a href="index.html" class="nav-sub-btn hover:translate-y-[-0.25rem] duration-300 drop-shadow-xl cursor-pointer">HOME</a>
-                <a class="nav-main-btn hover:translate-y-[-0.25rem] duration-300 drop-shadow-xl cursor-pointer">STORE</a>
-                <a href="about.html" class="nav-sub-btn hover:translate-y-[-0.25rem] duration-300 drop-shadow-xl cursor-pointer">ABOUT</a>
+            <div class="bg-[#23272A] py-[3rem] drop-shadow-2xl text-center">
+                <a href="index.html" class="nav-sub-btn">Home</a>
+                <a href="https://flanbapvp.tebex.io" class="nav-main-btn">Store</a>
+                <a href="about.html" class="nav-sub-btn">About</a>
             </div>
         </div>
-        <script>
-            document.addEventListener("click", logoClick);
-            
-            function logoClick(){
-            }
-        </script>
-        <style>
-        .titleAnimation{
-          animation: title 1.5s;
-        }
-
-        @keyframes title{
-            from{
-            opacity: 0;
-            transform: translateX(-20px);
-        }
-
-            to{
-            opacity: 1;
-            transform: translateX(0);
-        }
-      }
-        </style>
+        <div class="grid grid-cols-5 gap-[2.5rem] mx-[2.5rem] my-[2.5rem]">
+            <div class="bg-[#23272A] rounded-xl col-span-4">
+                <h1 class="text-center text-2xl text-white font-light">Hello World</h1>
+            </div>
+            <div class="bg-[#23272A] rounded-xl">
+                <h1 class="text-center text-2xl text-white font-light">Hello World</h1>
+            </div>
+        </div>
     </body>
 </html>
