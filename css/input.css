@@ -10,4 +10,12 @@
     .nav-sub-btn{
         @apply inline-block text-center text-2xl text-white font-light rounded-2xl mx-[1rem] bg-[#1c1c1f] hover:bg-zinc-900 px-[2rem] py-[1rem];
     }
+
+    .nav-main-btn-mobile{
+        @apply block text-2xl text-white font-light rounded-2xl mx-[1rem] text-transparent bg-clip-text bg-gradient-to-br from-[#FF7800] to-[#FEB400] hover:bg-gradient-to-br hover:from-[#c25a00] hover:to-[#c48c00] py-[1rem];
+    }
+
+    .nav-sub-btn-mobile{
+        @apply block text-2xl text-white font-light rounded-2xl mx-[1rem] text-transparent bg-clip-text bg-white hover:bg-[#c7c7c7] py-[1rem];
+    }
 }
