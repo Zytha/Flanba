@@ -564,6 +564,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 1rem;
 }
 
+.mb-\[10rem\] {
+  margin-bottom: 10rem;
+}
+
 .inline-block {
   display: inline-block;
 }
@@ -690,6 +694,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 2.5rem;
 }
 
+.py-\[10rem\] {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
 .pt-\[10rem\] {
   padding-top: 10rem;
 }
@@ -708,6 +717,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pb-\[\] {
   padding-bottom: ;
+}
+
+.pb-\[3rem\] {
+  padding-bottom: 3rem;
 }
 
 .text-left {
