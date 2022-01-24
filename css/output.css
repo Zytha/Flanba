@@ -556,6 +556,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: 3rem;
 }
 
+.mb-\[8rem\] {
+  margin-bottom: 8rem;
+}
+
+.mb-\[1rem\] {
+  margin-bottom: 1rem;
+}
+
 .inline-block {
   display: inline-block;
 }
