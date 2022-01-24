@@ -524,26 +524,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   position: absolute;
 }
 
-.relative {
-  position: relative;
-}
-
 .col-span-3 {
   grid-column: span 3 / span 3;
-}
-
-.col-span-4 {
-  grid-column: span 4 / span 4;
-}
-
-.mx-\[2\.5rem\] {
-  margin-left: 2.5rem;
-  margin-right: 2.5rem;
-}
-
-.my-\[2\.5rem\] {
-  margin-top: 2.5rem;
-  margin-bottom: 2.5rem;
 }
 
 .mx-\[1\.5rem\] {
@@ -551,39 +533,19 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: 1.5rem;
 }
 
+.mx-\[20rem\] {
+  margin-left: 20rem;
+  margin-right: 20rem;
+}
+
 .my-\[5rem\] {
   margin-top: 5rem;
   margin-bottom: 5rem;
 }
 
-.mx-\[3rem\] {
-  margin-left: 3rem;
-  margin-right: 3rem;
-}
-
 .mx-\[10rem\] {
   margin-left: 10rem;
   margin-right: 10rem;
-}
-
-.mx-\[5rem\] {
-  margin-left: 5rem;
-  margin-right: 5rem;
-}
-
-.my-\[rem\] {
-  margin-top: rem;
-  margin-bottom: rem;
-}
-
-.my-\[10rem\] {
-  margin-top: 10rem;
-  margin-bottom: 10rem;
-}
-
-.mx-\[20rem\] {
-  margin-left: 20rem;
-  margin-right: 20rem;
 }
 
 .ml-\[3rem\] {
@@ -592,10 +554,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .mr-\[3rem\] {
   margin-right: 3rem;
-}
-
-.mb-\[5rem\] {
-  margin-bottom: 5rem;
 }
 
 .inline-block {
@@ -614,36 +572,24 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 3.5rem;
 }
 
-.h-\[50vw\] {
-  height: 50vw;
-}
-
 .w-\[3\.5rem\] {
   width: 3.5rem;
-}
-
-.w-\[50vw\] {
-  width: 50vw;
 }
 
 .cursor-pointer {
   cursor: pointer;
 }
 
-.grid-cols-5 {
-  grid-template-columns: repeat(5, minmax(0, 1fr));
-}
-
 .grid-cols-3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
-.grid-rows-2 {
-  grid-template-rows: repeat(2, minmax(0, 1fr));
+.grid-cols-5 {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
 }
 
-.gap-\[2\.5rem\] {
-  gap: 2.5rem;
+.grid-rows-2 {
+  grid-template-rows: repeat(2, minmax(0, 1fr));
 }
 
 .rounded-xl {
@@ -679,12 +625,38 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-image: url('../assets/images/wallpaper.png');
 }
 
+.bg-gradient-to-r {
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+}
+
+.bg-gradient-to-b {
+  background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
+}
+
+.bg-gradient-to-br {
+  background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
+}
+
+.from-\[\#FF7800\] {
+  --tw-gradient-from: #FF7800;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(255 120 0 / 0));
+}
+
+.to-\[\#FEB400\] {
+  --tw-gradient-to: #FEB400;
+}
+
 .bg-cover {
   background-size: cover;
 }
 
 .bg-scroll {
   background-attachment: scroll;
+}
+
+.bg-clip-text {
+  -webkit-background-clip: text;
+          background-clip: text;
 }
 
 .bg-top {
@@ -710,20 +682,24 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 2.5rem;
 }
 
-.pb-\[5rem\] {
-  padding-bottom: 5rem;
-}
-
-.pt-\[5rem\] {
-  padding-top: 5rem;
+.pt-\[10rem\] {
+  padding-top: 10rem;
 }
 
 .pb-\[10rem\] {
   padding-bottom: 10rem;
 }
 
-.pt-\[10rem\] {
-  padding-top: 10rem;
+.pt-\[8rem\] {
+  padding-top: 8rem;
+}
+
+.pb-\[8rem\] {
+  padding-bottom: 8rem;
+}
+
+.pb-\[\] {
+  padding-bottom: ;
 }
 
 .text-left {
@@ -757,12 +733,17 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 2.5rem;
 }
 
-.font-light {
-  font-weight: 300;
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 .font-bold {
   font-weight: 700;
+}
+
+.font-light {
+  font-weight: 300;
 }
 
 .text-white {
@@ -770,24 +751,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.text-\[\#000\] {
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
-}
-
-.text-\[\#426a85\] {
-  --tw-text-opacity: 1;
-  color: rgb(66 106 133 / var(--tw-text-opacity));
-}
-
 .text-\[\#619ac0\] {
   --tw-text-opacity: 1;
   color: rgb(97 154 192 / var(--tw-text-opacity));
 }
 
-.decoration-current {
-  -webkit-text-decoration-color: currentColor;
-          text-decoration-color: currentColor;
+.text-transparent {
+  color: transparent;
+}
+
+.underline {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
 }
 
 .drop-shadow-xl {
@@ -798,15 +773,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .drop-shadow-2xl {
   --tw-drop-shadow: drop-shadow(0 25px 25px rgb(0 0 0 / 0.15));
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
-.duration-300 {
-  transition-duration: 300ms;
-}
-
-.empty\:text-xl:empty {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
 }
 
 .hover\:underline:hover {
