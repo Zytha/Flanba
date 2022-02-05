@@ -10,7 +10,7 @@
     <body class="font-[MeromSansRegular] bg-[#2C2F33]">
         <div>
             <div class="bg-[url('../assets/images/wallpaper.png')] bg-no-repeat bg-cover bg-scroll bg-top text-center py-[5rem]">
-                <img src="assets/images/logo.png" id="logo" class="inline-block h-[8rem] xl:h-[12.5rem] drop-shadow-xl cursor-pointer">
+                <img src="assets/images/logo.png"  onclick=" window.location.href='index.html' " class="inline-block h-[8rem] xl:h-[12.5rem] drop-shadow-xl cursor-pointer logoAnimation">
             </div>
             <nav class="bg-[#23272A] py-[3rem] drop-shadow-2xl text-center">
                 <div class="mx-auto text-center px-4">
@@ -19,7 +19,7 @@
                     <div class="flex">
               
                       <!-- primary nav -->
-                      <div class="hidden xl:grid grid-cols-5 drop-shadow-2xl text-center">
+                      <div class="hidden xl:grid grid-cols-5 drop-shadow-2xl text-center navbarAnimation">
                         <div class="text-left">
                             <a href="https://discord.gg/flanba">
                                 <img src="assets/images/discord.png" class="inline-block w-[3.5rem] h-[3.5rem] ml-[3rem]">
@@ -41,7 +41,7 @@
                             <a href="events.html" class="nav-sub-btn">Events</a>
                         </div>
 
-                        <div class="text-right col-span-1">
+                        <div class="text-right col-span-1 navbarAnimation">
                             <div class="inline-block mx-[1.5rem]">
                                 <div class="text-right grid grid-rows-2">
                                     <h1 class="font-bold text-white text-2xl">play.flanba.com</h1> 
@@ -78,7 +78,7 @@
               </nav>
             </div>
         </div>
-        <div class="mx-[1rem] xl:mx-[20rem] my-[5rem]">
+        <div class="blockAnimation mx-[1rem] xl:mx-[20rem] my-[5rem]">
             <div class="bg-[#17191b] rounded-t-xl">
                 <h1 class="text-center text-4xl text-transparent bg-clip-text bg-gradient-to-br from-[#FF7800] to-[#FEB400] font-bold py-[2.5rem]">About Us</h1>
             </div>
@@ -105,5 +105,54 @@
             menu.classList.toggle("hidden");
             });
         </script>
+        <style>
+            .logoAnimation{
+                animation: logo 2s;
+            }
+
+            @keyframes logo{
+                from{
+                opacity: 0;
+                transform: translateY(25px);
+                }
+
+                to{
+                opacity: 1;
+                transform: translateX(0);
+                }
+            }
+
+            .navbarAnimation{
+                animation: navbar 2s;
+            }
+
+            @keyframes navbar{
+                from{
+                opacity: 0;
+                transform: translateY(-25px);
+                }
+
+                to{
+                opacity: 1;
+                transform: translateX(0);
+                }
+            }
+
+            .blockAnimation{
+                animation: block 2s;
+            }
+
+            @keyframes block{
+                from{
+                opacity: 0;
+                transform: translateX(-25px);
+                }
+
+                to{
+                opacity: 1;
+                transform: translateX(0);
+                }
+            }       
+        </style>
     </body>
 </html>
